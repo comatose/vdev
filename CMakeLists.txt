@@ -8,6 +8,9 @@ find_package(Hana 1.1.0)
 add_executable(vdev main.cpp)
 add_dependencies(vdev Hana)
 
+add_executable(plantuml plantuml.cpp)
+add_executable(event event.cpp)
+
 # set(Sml_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/ext/sml")
 # find_package(Sml 1.0.1)
 # add_dependencies(vdev Sml)
@@ -19,7 +22,7 @@ include_directories(
   ${Sml_INCLUDE_DIRS}
 )
 
-list(APPEND CMAKE_CXX_FLAGS "-std=gnu++1z -O3 -fno-rtti -fno-exceptions")
+list(APPEND CMAKE_CXX_FLAGS "-std=gnu++1z -O3 -fno-exceptions")
 
 # set_property(TARGET vdev PROPERTY CXX_INCLUDE_WHAT_YOU_USE "iwyu")
 # set_property(TARGET vdev PROPERTY CXX_STANDARD 14)
