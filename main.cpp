@@ -9,6 +9,8 @@
 namespace sml = boost::sml;
 using namespace sml;
 
+namespace hana = boost::hana;
+
 using namespace std;
 
 //dependencies
