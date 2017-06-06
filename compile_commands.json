@@ -1,17 +1,22 @@
 [
 {
   "directory": "/home/comatose/workspace/vdev",
-  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/usr/local/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/vdev.dir/main.cpp.o -c /home/comatose/workspace/vdev/main.cpp",
+  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/home/comatose/workspace/vdev/ext/hana/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/guard.dir/guard.cpp.o -c /home/comatose/workspace/vdev/guard.cpp",
+  "file": "/home/comatose/workspace/vdev/guard.cpp"
+},
+{
+  "directory": "/home/comatose/workspace/vdev",
+  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/home/comatose/workspace/vdev/ext/hana/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/vdev.dir/main.cpp.o -c /home/comatose/workspace/vdev/main.cpp",
   "file": "/home/comatose/workspace/vdev/main.cpp"
 },
 {
   "directory": "/home/comatose/workspace/vdev",
-  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/usr/local/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/plantuml.dir/plantuml.cpp.o -c /home/comatose/workspace/vdev/plantuml.cpp",
+  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/home/comatose/workspace/vdev/ext/hana/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/plantuml.dir/plantuml.cpp.o -c /home/comatose/workspace/vdev/plantuml.cpp",
   "file": "/home/comatose/workspace/vdev/plantuml.cpp"
 },
 {
   "directory": "/home/comatose/workspace/vdev",
-  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/usr/local/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/event.dir/event.cpp.o -c /home/comatose/workspace/vdev/event.cpp",
+  "command": "/usr/bin/clang++    -I/home/comatose/workspace/vdev/include -I/home/comatose/workspace/vdev/ext/hana/include -I/home/comatose/src/sml/include  -std=gnu++1z -O3 -fno-exceptions   -o CMakeFiles/event.dir/event.cpp.o -c /home/comatose/workspace/vdev/event.cpp",
   "file": "/home/comatose/workspace/vdev/event.cpp"
 }
 ]

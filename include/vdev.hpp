@@ -1,3 +1,6 @@
+#ifndef __VDEV_HPP
+#define __VDEV_HPP
+
 #define DEFINE_DEVICE(NAME)                     \
     using VDEVICE_CLASS_NAME = NAME;
 
@@ -39,3 +42,5 @@
             owner_.set_##NAME(v);                       \
         }                                               \
     } NAME{*this};
+
+#endif // __VDEV_HPP

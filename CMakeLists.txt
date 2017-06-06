@@ -10,6 +10,7 @@ add_dependencies(vdev Hana)
 
 add_executable(plantuml plantuml.cpp)
 add_executable(event event.cpp)
+add_executable(guard guard.cpp)
 
 # set(Sml_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/ext/sml")
 # find_package(Sml 1.0.1)
