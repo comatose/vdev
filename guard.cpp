@@ -13,7 +13,7 @@ int main() {
   int &y = x;
   {
     auto _ = makeBackupGuard(y);
-    y = 99;
+    y = 100;
   }
   assert(x == 99);
 
@@ -37,13 +37,23 @@ int main() {
     int x;
   };
 
-  non_copiable nc{10};
+  non_copiable nc{99};
   non_copiable* pnc = &nc;
   {
     auto _ = makeBackupGuard(pnc);
     pnc->x = 100;
   }
-  assert(nc.x == 10);
+  assert(nc.x == 99);
 
+  {
+    auto _ = makeBackupGuard(x, y, p, pp, pnc);
+    x = 100;
+    y = 100;
+    *p = 100;
+    **pp = 100;
+    pnc->x = 100;
+  }
+  assert(x == 99);
+  assert(nc.x == 99);
   return 0;
 }

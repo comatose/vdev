@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <utility>
 #include <type_traits>
+#include <tuple>
 
 template<class T, typename = void>
 class BackupGuard {
@@ -57,9 +58,9 @@ class BackupGuard<T, std::enable_if_t<std::is_pointer<T>::value &&
   static_assert("no backup can be created.");
 };
 
-template<class T>
-BackupGuard<T> makeBackupGuard(T& v) {
-  return {v};
+template<class... Ts>
+std::tuple<BackupGuard<Ts>...> makeBackupGuard(Ts&... vs) {
+  return {vs...};
 }
 
 #endif // __GUARD_HPP
