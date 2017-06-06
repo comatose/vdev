@@ -33,14 +33,10 @@ struct event_system {
   }
 };
 
-template <typename EventMap>
-event_system<EventMap> make_event_system_impl(EventMap em) {
-  return {em};
-}
-
 template <typename ...Events>
 auto  make_event_system(Events ...events) {
-  return make_event_system_impl(hana::make_map(hana::make_pair(events, std::vector<Callback>{})...));
+  auto em = hana::make_map(hana::make_pair(events, std::vector<Callback>{})...);
+  return event_system<decltype(em)>{std::move(em)};
 }
 
 int main() {
